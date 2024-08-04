@@ -8,9 +8,9 @@ import ButtonLink from '@/app/_components/ButtonLink';
 export const revalidate = 60;
 
 export default async function Page() {
-  const data = await getNewsList({
-    limit: TOP_NEWS_LIMIT,
-  });
+  //const data = await getNewsList({
+    //limit: TOP_NEWS_LIMIT,
+  //});
   return (
     <>
       <section className={styles.top}>
@@ -29,6 +29,7 @@ export default async function Page() {
           priority
         />
       </section>
+      {/*
       <section className={styles.news}>
         <h2 className={styles.newsTitle}>News</h2>
         <NewsList articles={data.contents} />
@@ -36,6 +37,7 @@ export default async function Page() {
           <ButtonLink href="/news">もっとみる</ButtonLink>
         </div>
       </section>
+      */}
       <section className={styles.section}>
         <div className={styles.horizontal}>
           <div>
